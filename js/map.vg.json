@@ -5,7 +5,7 @@
     "height": 400,
     "projection": {"type": "equalEarth"},
      "data": {
-        "url": "https://raw.githubusercontent.com/Gorgon3179/3179/main/3179HW9/countrylayer.topojson",
+        "url": "https://raw.githubusercontent.com/Gorgon3179/3179DataViz/main/countrylayer.topojson",
         "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
       },
     "layer": [
@@ -21,14 +21,14 @@
       },
       {
         "data": {
-          "url": "https://raw.githubusercontent.com/Gorgon3179/3179/main/3179HW9/oceanlayer.topojson",
+          "url": "https://raw.githubusercontent.com/Gorgon3179/3179DataViz/main/oceanlayer.topojson",
           "format": {"type": "topojson", "feature": "oceans"}
         },
         "mark": {"type": "geoshape", "fill": "skyblue"}
       },
       {
         "data": {
-          "url": "https://raw.githubusercontent.com/Gorgon3179/3179/main/3179HW9/gridlines.topojson",
+          "url": "https://raw.githubusercontent.com/Gorgon3179/3179DataViz/main/gridlines.topojson",
           "format": {"type": "topojson", "feature": "ne_110m_graticules_30"}
         },
         "mark": {"type": "geoshape", "fill": null, "stroke": "black"}
@@ -39,7 +39,7 @@
             "lookup": "properties.NAME",
             "from": {
               "data": {
-                "url": "https://raw.githubusercontent.com/Gorgon3179/3179/main/3179HW9/export_data.csv"
+                "url": "https://raw.githubusercontent.com/Gorgon3179/3179DataViz/main/export_data.csv"
               },
               "key": "Country",
               "fields": ["Export_US$_Thousand","Total"]
